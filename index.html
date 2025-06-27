@@ -1,34 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>My First GitHub Page</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>My Favourite Dogs!</h1>
-  <p id="output">Choose your favourite dogs!</p>
+  <p id="output">Choose your favourite dogs! 
+    <br>
+    <br>
+    Click for the details</p>
   <div class="container">
-    <div class="card">
+
+    <div class="card" onclick="toggleDescription(this)">
       <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg" alt="Golden Retriever" width="200px">
       <h2>Golden Retriever</h2>
       <button class="vote-button" data-camp="Golden Retriever">Vote</button>
+      <p class="description"><strong>Origin:</strong> Scotland</p>
+      <p class="description"><strong>Description:</strong> Friendly, intelligent, and devoted.</p>
+      <p class="description"><strong>Lifespan:</strong>10-12 years</p>
     </div>
-    <div class="card">
+
+    <div class="card" onclick="toggleDescription(this)">
       <img src="https://images.pexels.com/photos/2187304/pexels-photo-2187304.jpeg" alt="Shiba Inu" width="200">
       <h2>Shiba Inu</h2>
       <button class="vote-button" data-camp="Shiba Inu">Vote</button>
+      <p class="description"><strong>Origin:</strong> Japan</p>
+      <p class="description"><strong>Description:</strong> Alert, spirited, and good-natured.</p>
+      <p class="description"><strong>Lifespan:</strong> 12-15 years</p>
     </div>
-    <div class="card">
+
+    <div class="card" onclick="toggleDescription(this)">
       <img src="https://images.pexels.com/photos/28946856/pexels-photo-28946856.jpeg" alt="Maltese" width="200">
       <h2>Maltese</h2>
       <button class="vote-button" data-camp="Maltese">Vote</button>
+      <p class="description"><strong>Origin:</strong> Malta</p>
+      <p class="description"><strong>Description:</strong> Gentle, playful, and affectionate.</p>
+      <p class="description"><strong>Lifespan:</strong> 12-15 years</p>
     </div>
-    <div class="card">
+
+    <div class="card" onclick="toggleDescription(this)">
       <img src="https://images.pexels.com/photos/14073581/pexels-photo-14073581.jpeg" alt="Pekingese" width="200">
       <h2>Pekingese</h2>
       <button class="vote-button" data-camp="Pekingese">Vote</button>
+      <p class="description"><strong>Origin:</strong> China</p>
+      <p class="description"><strong>Description:</strong> Independent, affectionate, and loyal.</p>
+      <p class="description"><strong>Lifespan:</strong> 12-15 years</p>
     </div>
+
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
