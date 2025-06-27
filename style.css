@@ -52,6 +52,6 @@ body {
   color: #555;
   margin-top: 10px;
 }
-.card.show .description {
+.card.show.description {
   display: block;
 }
